@@ -39,7 +39,7 @@ Dim linhas As Integer, colunas As Integer, linha As Integer, coluna As Integer
     Do Until EOF(nrAquivo)
     
         'Lê uma linha por vez
-        Input #nrAquivo, txtLinha
+        Line Input #nrAquivo, txtLinha
         
         'Divide a linha em colunas
         matrixColunas = explodeLinha(txtLinha, delimitador, colunas)
@@ -120,7 +120,7 @@ Function contarColunas(arquivo As String, delimitador As String) As Integer
 '   delimitador = texto - delimitador de colunas
 
 'Autor: Vener Fruet daSilveira
-'Versão: 2023-05-16
+'Versão: 2023-05-17
 
 Dim nrAquivo As Integer, txtLinha As String
 Dim qtdeColunas As Integer, posDelimitador As Integer
@@ -134,7 +134,7 @@ Dim qtdeColunas As Integer, posDelimitador As Integer
     'Lê a primeira para determinar a quantidade de colunas
     If Not EOF(nrAquivo) Then
         'Lê uma linha por vez
-        Input #nrAquivo, txtLinha
+        Line Input #nrAquivo, txtLinha
     End If
     
     'Verifica a quantidade de delimitadores no texto
@@ -170,7 +170,7 @@ Dim txt As String
     Open arquivo For Input As nrArquivo
     
     Do Until EOF(nrArquivo)
-        Input #nrArquivo, txt
+        Line Input #nrArquivo, txt
         linhas = linhas + 1
     Loop
     
