@@ -34,3 +34,9 @@ Espero que agrade.
 #### FuncoesVener.bas  
   Código do módulo das funções de importação e exportação de arquivos de texto.
 
+---
+
+#### Tela principal:
+
+
+![TelaPrincipal](https://github.com/venerfruet/TechDoFuturo/assets/105865020/1855d25d-7109-4211-9129-dfbcfe488d64)
