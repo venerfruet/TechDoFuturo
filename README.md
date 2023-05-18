@@ -1,30 +1,32 @@
 # Tech do Futuro 1º edição
 ## Repositório para entrega do desafio de código do Projeto Tech do Futuro Paschoalotto
 
-### Do programa CSVImport:</b>
-Foi desenvolvido para mostrar minhas habilidades no desenvolvimento em espiral e exemplificar os métodos para manipulação de arquivos de texto, não foi usada nenhuma API de importação do arquivo CSV para o banco de dados.&nbsp;
-Todos os métodos contidos neste programa foram desenvolvidos por mim.&nbsp;
-Prezei em demonstrar minhas habilidades no desenvolvimento de códigos utilizando conceitos como abstração de código, utilização de métodos nativos do VB/VBA para a leitura e gravação de arquivos de textos, manipulação de matrizes, tratamento de erros, utilização de objetos visuais para as telas e instrções SQL para DDL e DML na manipulação do banco de dados.
+### Do programa CSVImport:
+Foi desenvolvido para mostrar minhas habilidades no desenvolvimento em espiral e exemplificar os métodos para manipulação de arquivos de texto, não foi usada nenhuma API de importação do arquivo CSV para o banco de dados.  
+Todos os métodos contidos neste programa foram desenvolvidos por mim.  
+Prezei em demonstrar minhas habilidades no desenvolvimento de códigos utilizando conceitos como abstração de código, utilização de métodos nativos do VB/VBA para a leitura e gravação de arquivos de textos, manipulação de matrizes, tratamento de erros, utilização de objetos visuais para as telas e instrções SQL para DDL e DML na manipulação do banco de dados.  
 Espero que agrade.
+
+---
 
 ### Arquivos do repositório:
 
-CSVImport.mdb
-  Programma de código aberto que roda no Ms Access.
+#### CSVImport.mdb  
+  Programa de código aberto que roda no Ms Access.
   Para rodar o programa apartir do Ms Office 2010 deve-se defini este arquivo como confiável.
 
-COD_IBGE_SP.csv
+#### COD_IBGE_SP.csv  
   Arquivos de dados de amostra.
 
-Form_ImportarCSV.cls
+#### Form_ImportarCSV.cls  
   Código da tela principal do programa
 
-Form_ListarTabelas.cls
+#### Form_ListarTabelas.cls  
   Código da tela auxiliar para exibir as tabelas existentes no banco de dados.
 
-Ambiente.bas
+#### Ambiente.bas  
   Código do módulo de definição de variáveis de ambiente.
 
-FuncoesVener.bas
+#### FuncoesVener.bas  
   Código do módulo das funções de importação e exportação de arquivos de texto.
 
