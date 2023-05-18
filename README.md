@@ -2,9 +2,9 @@
 ## Repositório para entrega do desafio de código do Projeto Tech do Futuro Paschoalotto
 
 ### Do programa CSVImport:</b>
-Foi desenvolvido para mostrar minhas habilidades no desenvolvimento em espiral e exemplificar os métodos para manipulação de arquivos de texto, não foi usada nenhuma API de importação do arquivo CSV para o banco de dados.</b>
-Todos os métodos contidos neste programa foram desenvolvidos por mim.
-Prezei em demonstrar minhas habilidades no desenvolvimento de códigos utilizando conceitos com abstração de código, utilização de métodos nativos do VB/VBA para a leitura e gravação de arquivos de textos, demostração da utilização de objetos visuais para as telas e instrções SQL em DDL e DML na manipulação do banco de dados.
+Foi desenvolvido para mostrar minhas habilidades no desenvolvimento em espiral e exemplificar os métodos para manipulação de arquivos de texto, não foi usada nenhuma API de importação do arquivo CSV para o banco de dados.&nbsp;
+Todos os métodos contidos neste programa foram desenvolvidos por mim.&nbsp;
+Prezei em demonstrar minhas habilidades no desenvolvimento de códigos utilizando conceitos como abstração de código, utilização de métodos nativos do VB/VBA para a leitura e gravação de arquivos de textos, manipulação de matrizes, tratamento de erros, utilização de objetos visuais para as telas e instrções SQL para DDL e DML na manipulação do banco de dados.
 Espero que agrade.
 
 ### Arquivos do repositório:
