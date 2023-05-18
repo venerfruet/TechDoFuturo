@@ -14,6 +14,11 @@ Espero que agrade.
 ### Se não possuir o Access 32 bits.  
 Faça o download do runtime no site da Microsoft.  
 https://www.microsoft.com/pt-br/download/details.aspx?id=10910  
+Após a instalação será necessário alterar o registro do Windows para definir um local confiável, como mostrado abaixo:  
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Access\Security\Trusted Locations\Location(n)]
+
+
 
 ### Arquivos do repositório:
 
