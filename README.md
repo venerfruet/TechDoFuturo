@@ -11,6 +11,9 @@ Prezei em demonstrar minhas habilidades no desenvolvimento de códigos utilizand
 Espero que agrade.
 
 ---
+### Se não possuir o Access 32 bits.  
+Faça o download do runtime no site da Microsoft.  
+https://www.microsoft.com/pt-br/download/details.aspx?id=10910  
 
 ### Arquivos do repositório:
 
