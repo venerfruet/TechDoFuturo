@@ -18,7 +18,9 @@ Após a instalação será necessário alterar o registro do Windows para defini
 
 [HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Access\Security\Trusted Locations\Location(n)]
 
+![image](https://github.com/venerfruet/TechDoFuturo/assets/105865020/df562ddc-cc23-4b08-9926-aef040434718)
 
+Onde cada chave Location é um local de confiabilidade.  
 
 ### Arquivos do repositório:
 
