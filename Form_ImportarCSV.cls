@@ -19,7 +19,7 @@ Private Sub cmdAbrirCSV_Click()
 Dim pathArquivo As String, testaArquivo As String
     
     'Solicita o caminho do arquivo a ser importado
-    pathArquivo = InputBox("Informe o caminho do arquivo", TITULO_PADRAO, "C:\Users\VENER\Documents\TechDoFuturo1\COD_IBGE_SP.csv")
+    pathArquivo = InputBox("Informe o caminho do arquivo." & vbCrLf & "No caso de informar apenas o nome do arquivo este deve estar na pasta DOCUMENTOS do usuário.", TITULO_PADRAO, "COD_IBGE_SP.csv")
     If pathArquivo = "" Then Exit Sub 'Botão cancelar acionado
     
     'Testa se o arquivo existe
@@ -170,7 +170,7 @@ Private Sub exportar_Click()
 Dim pathArquivo As String, testaArquivo As String
 
     'Solicita o caminho do arquivo a ser importado
-    pathArquivo = InputBox("Informe o caminho do arquivo", TITULO_PADRAO, "C:\Users\VENER\Documents\TechDoFuturo1\COD_IBGE_SP.csv")
+    pathArquivo = InputBox("Informe o caminho do arquivo." & vbCrLf & "No caso de informar apenas o nome do arquivo este estrá na pasta DOCUMENTOS do usuário.", TITULO_PADRAO, "COD_IBGE_SP.csv")
     If pathArquivo = "" Then Exit Sub 'Botão cancelar acionado
     
     'Testa se o arquivo existe
