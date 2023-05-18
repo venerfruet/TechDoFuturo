@@ -15,8 +15,8 @@ Espero que agrade.
 ### Arquivos do repositório:
 
 #### CSVImport.mdb  
-  Programa de código aberto que roda no Ms Access.  
   Para importar qualquer arquivo delimitado por ponto e vírgula (;).  
+  Programa de código aberto que roda no Ms Access.  
   Para rodar o programa apartir do Ms Office 2010 este arquivo deverá ser definido como confiável.  
   Para acessar a estrutura abrir o programa com a tecla "SHIFT" pressionada.
 
