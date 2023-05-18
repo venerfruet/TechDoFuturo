@@ -41,4 +41,4 @@ Espero que agrade.
 
 
 ![image](https://github.com/venerfruet/TechDoFuturo/assets/105865020/e95181a1-5ce3-4b59-9085-323332f73b50)
-
+![image](https://github.com/venerfruet/TechDoFuturo/assets/105865020/944f31ec-2db9-4da5-bc30-cf49f958829d)
