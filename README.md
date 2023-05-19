@@ -12,7 +12,7 @@ Espero que agrade.
 
 ---
 ### Se não possuir o Access 32 bits.  
-Faça o download do runtime no site da Microsoft.  
+Faça o download do runtime do **MsAccess de 32 bits** no site da Microsoft.  
 https://www.microsoft.com/pt-br/download/details.aspx?id=10910  
 
 Ao abrir o programa com o runtime irá aparecer a tela abaixo.  
