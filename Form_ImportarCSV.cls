@@ -76,8 +76,15 @@ Dim txtColuna As String
         
         'define o texto e o tamanho das colunas do cabeçalho
         With cabecalho
+        
             .Text = txtColuna
-            .Width = Me.listaDados.Width / colunas
+            
+            If colunas > 0 Then
+                .Width = Me.listaDados.Width / colunas
+            Else
+                .Width = Me.listaDados.Width
+            End If
+            
         End With
         
         'Esvazia o objeto cabeçalho
