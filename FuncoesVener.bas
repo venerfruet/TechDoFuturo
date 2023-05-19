@@ -3,20 +3,20 @@ Option Explicit
 
 'FuncoesVener
 'Autor: Vener Fruet da Silveira
-'Vers„o: 2023-05-16
+'Vers√£o: 2023-05-16
 
 Function importarArquivo(arquivo As String, delimitador As String, destino() As String) As Variant
 
 'importarArquivo
-'FunÁ„o que lÍ o arquivo a ser importado
+'Fun√ß√£o que l√™ o arquivo a ser importado
 
-'Par‚metros:
+'Par√¢metros:
 '   arquivo = texto - caminho do arquivo a ser lido
 '   delimitador = texto - delimitador de colunas
 '   destino = matriz - destino dos dados lidos
 
 'Autor: Vener Fruet da Silveira
-'Vers„o: 2023-05-17
+'Vers√£o: 2023-05-17
 
 Dim matrixTabela() As String, matrixColunas() As String
 Dim nrAquivo As Integer, txtLinha As String
@@ -26,7 +26,7 @@ Dim linhas As Integer, colunas As Integer, linha As Integer, coluna As Integer
     linhas = contarLinhas(arquivo)
     colunas = contarColunas(arquivo, delimitador)
     
-    'Define o tamanho da matriz tabela para 1 linha e o tamanho de colunas do arquivo
+    'Define o tamanho da matriz tabela para a quatidade de linhas e a quantidade de colunas do arquivo
     ReDim destino(linhas, colunas)
     
     'Retorna nr de arquivo livre
@@ -35,10 +35,10 @@ Dim linhas As Integer, colunas As Integer, linha As Integer, coluna As Integer
     'Abre o arquivo
     Open arquivo For Input As nrAquivo
     
-    'Percorre todo o arquivo atÈ o final
+    'Percorre todo o arquivo at√© o final
     Do Until EOF(nrAquivo)
     
-        'LÍ uma linha por vez
+        'L√™ uma linha por vez
         Line Input #nrAquivo, txtLinha
         
         'Divide a linha em colunas
@@ -63,15 +63,15 @@ End Function
 
 Function explodeLinha(txtLinha As String, delimitador As String, colunas As Integer) As Variant
 'explodeLinha
-'FunÁ„o que separa os dados de acordo com o delimitador
+'Fun√ß√£o que separa os dados de acordo com o delimitador
 
-'Par‚metros:
+'Par√¢metros:
 '   txtLinha = texto - texto delimitado contendo os dados a serem separados
 '   delimitador = texto - delimitador de colunas
-'   colunas = n˙mero - inteiro de quantidade de colunas
+'   colunas = n√∫mero - inteiro de quantidade de colunas
 
 'Autor: Vener Fruet da Silveira
-'Vers„o: 2023-05-16
+'Vers√£o: 2023-05-16
 
 Dim matrixDados() As String, txtDado As String
 Dim posInicio As Integer, posDelimitador As Integer, indice As Integer
@@ -85,7 +85,6 @@ Dim posInicio As Integer, posDelimitador As Integer, indice As Integer
         'Retorna o primeiro delimitador
         posDelimitador = InStr(posDelimitador + 1, txtLinha, delimitador)
         
-        'Sai do loop se n„o existir mais delimitador
         If posDelimitador = 0 Then
             'Extrai a substring
             txtDado = Mid(txtLinha, posInicio + 1)
@@ -97,12 +96,13 @@ Dim posInicio As Integer, posDelimitador As Integer, indice As Integer
         'Popula a matriz
         matrixDados(indice) = txtDado
         
-        'Define a posiciÁ„o de inicio da prÛxima substring
+        'Define a posici√ß√£o de inicio da pr√≥xima substring
         posInicio = posDelimitador
         
-        'Define o prÛximo indice da matriz
+        'Define o pr√≥ximo indice da matriz
         indice = indice + 1
-        
+    
+    'Sai do loop se n√£o existir mais delimitador
     Loop Until posDelimitador = 0
     
     'Retorna a matriz
@@ -113,14 +113,14 @@ End Function
 Function contarColunas(arquivo As String, delimitador As String) As Integer
 
 'contarColunas
-'FunÁ„o que retorna a quantidade de colunas baseado no delimitador
+'Fun√ß√£o que retorna a quantidade de colunas baseado no delimitador
 
-'Par‚metros:
+'Par√¢metros:
 '   arquivo = texto - caminho do arquivo a ser lido
 '   delimitador = texto - delimitador de colunas
 
 'Autor: Vener Fruet daSilveira
-'Vers„o: 2023-05-17
+'Vers√£o: 2023-05-17
 
 Dim nrAquivo As Integer, txtLinha As String
 Dim qtdeColunas As Integer, posDelimitador As Integer
@@ -131,9 +131,9 @@ Dim qtdeColunas As Integer, posDelimitador As Integer
     'Abre o arquivo
     Open arquivo For Input As nrAquivo
     
-    'LÍ a primeira para determinar a quantidade de colunas
+    'L√™ a primeira para determinar a quantidade de colunas
     If Not EOF(nrAquivo) Then
-        'LÍ uma linha por vez
+        'L√™ uma linha por vez
         Line Input #nrAquivo, txtLinha
     End If
     
@@ -154,13 +154,13 @@ End Function
 
 Function contarLinhas(arquivo) As Integer
 'contarLinhas
-'FunÁ„o que retorna a quantidade de linhas no arquivo
+'Fun√ß√£o que retorna a quantidade de linhas no arquivo
 
-'Par‚metros:
+'Par√¢metros:
 '   arquivo = texto - caminho do arquivo a ser lido
 
 'Autor: Vener Fruet daSilveira
-'Vers„o: 2023-05-17
+'Vers√£o: 2023-05-17
 
 Dim nrArquivo As Integer, linhas As Integer
 Dim txt As String
@@ -182,11 +182,11 @@ End Function
 
 Function exportarParaCSV(arquivo As String, listaDados As MSComctlLib.ListView, nomesColunas As Boolean) As Boolean
 'Exporta dados para um arquivo delimitado por ponto e virgula (;)
-'Par‚metros:
+'Par√¢metros:
 '   arquivo = texto - nome do arquivo a ser criado
 
 'Autor: Vener Fruet da Silveira
-'Vers„o: 2023-05-17
+'Vers√£o: 2023-05-17
 
 Dim cabecalho As ColumnHeaders
 Dim itens As ListItems, item As ListItem
@@ -194,7 +194,7 @@ Dim txtValores As String
 Dim linha As Integer, subItem As Integer
 Dim nrArquivo As Integer, coluna As Integer
 
-    'Define o objeto cabeÁalho
+    'Define o objeto cabe√ßalho
     Set cabecalho = listaDados.ColumnHeaders
     
     'Define o objeto de itens da lista de dados
@@ -206,10 +206,10 @@ Dim nrArquivo As Integer, coluna As Integer
     'Inicia o tratamento de erro
     On Error GoTo trataErro
     
-    'Abre o arquivo para inserÁ„o
+    'Abre o arquivo para inser√ß√£o
     Open arquivo For Output As nrArquivo
     
-    'Exportar cabeÁalho?
+    'Exportar cabe√ßalho?
     If nomesColunas Then
         For coluna = 1 To cabecalho.Count
             If coluna = 1 Then
@@ -246,7 +246,7 @@ Dim nrArquivo As Integer, coluna As Integer
     Next linha
     
     'Mensagem de controle
-    MsgBox "ExportaÁ„o concluÌda", vbInformation, TITULO_PADRAO
+    MsgBox "Exporta√ß√£o conclu√≠da", vbInformation, TITULO_PADRAO
     
     'Fecha o arquivo
     Close nrArquivo
